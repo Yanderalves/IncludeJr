@@ -1,0 +1,385 @@
+/* General Settings */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+section{
+    margin: 30px auto;
+    width: 100%;
+}
+
+a, a:visited{
+    color: var(--002);
+}
+
+/* color palette */
+
+:root{
+    --000:  #F0F0F0;
+    --001:  #00000085;
+    --002:  #D9D9D9;
+    --003:  white;
+    --004:  #F25221B2;
+    --005:  #F25221CC;
+    --006:    #F25221;
+    --007:    black;
+}
+
+/* Header */
+header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--005);
+    background-color: var(--001);
+    padding: 15px;
+    z-index: 10000;
+}
+
+header nav{
+    display: flex;
+    gap: 20px; 
+}
+
+/* Banner */
+
+/* 
+.overlay{
+    background-color: var(--000);
+} */
+
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/images/section/background-banner_compressed.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    color: var(--000);
+    text-align: center;
+    height: 100vh;
+    letter-spacing: 3px;
+}
+
+#banner .container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#banner .container-text h2{
+    font-weight: 100;
+}
+
+#banner a{
+    margin-top: 50px;
+    background-color: var(--005);
+    font-size: 30px;
+    padding: 5px 30px;
+    border-radius: 60px;
+    transition: transform 0.3s ease;
+}
+
+#banner a:hover{
+    transform: scale(1.1);
+}
+
+/* Services */
+#services h3{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    line-height: 16px;
+    height: 250px;
+    font-size: 14px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--002);
+    max-width: 600px;
+    width: calc((100% / 2) - 15px);
+    border-radius: 30px;
+}
+
+.service img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.service p{
+    text-align: justify;
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+#services .container-services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+
+.service a{
+    background-color: var(--004);
+    padding: 5px 30px;
+    border-radius: 60px;
+}
+
+
+/* Quote */
+
+#quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    line-height: 21px;
+    padding: 15px;
+    background-color: var(--007);
+    color: var(--002);
+}
+
+.container-quote p{
+    text-align: justify;
+}
+
+.container-quote{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.container-quote cite{
+    align-self: flex-end;
+}   
+
+
+/* Infos */
+
+#infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+#infos .container:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--000);
+    max-width: 625px;
+    border-radius: 30px;
+}
+
+.info p{
+    text-align: justify;
+}
+
+.info p em, .info span{
+    color: var(--004);
+    font-style: normal;
+    font-weight: bold;
+}
+
+.info h5:first-child{
+    align-self: flex-start;
+    color: var(--004);
+    font-size: 20px;
+}
+
+.info ul{
+    margin-left: 18px;
+}
+
+
+#infos .container:last-child .info{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--002);
+    gap: 25px;
+    padding: 50px 20px;
+}
+
+#infos .container:first-child .info:last-child li{
+    text-align: justify;
+}
+
+/* Customers */
+
+#customers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.customer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.customers .customer img{
+    object-fit: cover;
+}
+
+.customers .customer{
+    width: calc((100% / 5));
+}
+
+.customer:hover{
+    background-color: var(--000);
+    transform: scale(1.1);
+}
+
+
+/* characteristics */
+
+#characteristics{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#characteristics .container:first-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--006);
+    width: 100%; 
+    padding: 20px;
+    gap: 20px;  
+}
+
+#characteristics .container:first-child .characteristic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--003);
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 130px;
+    text-align: center;
+}
+
+
+#characteristics .container:last-of-type{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    background-color: var(--004);
+    padding: 20px;
+}
+
+#characteristics .container:last-child .step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--003);
+}
+
+#characteristics .container:last-child p{
+    max-width: 200px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#characteristics .container:last-of-type .step div:first-child {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--006);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+#characteristics .container:last-of-type span{
+    display: block;
+    position: absolute;
+    margin-top: 12px;
+    height: 1px;
+    width: 50%;
+    background-color: var(--003);
+    opacity: 0.5;
+    /* color: var(--002); */
+    /* height: 87px; */
+}
+
+/* Budget */
+
+#budget{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.item-form{
+    display: flex;
+    flex-direction: column;
+}
