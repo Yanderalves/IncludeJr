@@ -75,6 +75,7 @@ header nav {
 #banner .container-text {
     display: flex;
     flex-direction: column;
+    font-size: clamp(1em, 1em + 0.1vw, 1.5em);
     gap: 10px;
 }
 
@@ -85,8 +86,8 @@ header nav {
 #banner a {
     margin-top: 50px;
     background-color: var(--005);
-    font-size: 30px;
-    padding: 5px 30px;
+    font-size: clamp(1em, 1em + 1vw, 1.5em);
+    padding: 0.5rem 0.8rem;
     border-radius: 60px;
     transition: transform 0.3s ease;
 }
@@ -152,8 +153,6 @@ header nav {
 }
 
 
-
-
 .service a {
     background-color: var(--004);
     padding: 5px 30px;
@@ -194,8 +193,10 @@ header nav {
 #infos {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 35px;
+    padding: 10px;
 }
 
 #infos .container:first-child {
@@ -279,6 +280,7 @@ header nav {
 
 .customers .customer img {
     object-fit: cover;
+    width: 100%;
 }
 
 .customers .customer {
@@ -299,7 +301,6 @@ header nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
 }
 
 #characteristics .container:first-of-type {
@@ -322,7 +323,13 @@ header nav {
     padding: 10px;
     max-width: 130px;
     text-align: center;
+    transition: transform 0.3s ease;
 }
+
+#characteristics .container:first-child .characteristic:hover {
+    transform: scale(1.1);
+}
+
 
 
 #characteristics .container:last-of-type {
@@ -377,20 +384,46 @@ header nav {
 #budget {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 25px auto;
 }
 
 .container-form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 500px;
+    gap: 10px;
+    flex-grow: 1;
 }
 
+#budget .container-form:first-of-type{
+    border-right: 1px solid black;
+    padding-right: 50px;
+}
+
+
 form {
-    width: 100%;
+    max-width: 800px;
     display: flex;
+    justify-content: center;
     gap: 50px;
+}
+
+
+form input,  textarea{
+    height: 30px;
+    padding: 5px 10px;
+    color: var(--003);
+    font-size: 13px;
+    background-color: var(--004);
+    border: none;
+    border-radius: 20px;
+}
+
+form textarea{
+    height: 222px !important;
 }
 
 .item-form {
@@ -404,7 +437,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     color: var(--000);
-    height: 255px;
+    padding: 15px;
     background-color: var(--007);
 }
 
@@ -423,3 +456,75 @@ footer .container-text .container-infos {
     flex-direction: column;
     gap: 15px;
 }
+
+footer .container-text .social-medias{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .container-map iframe{
+    width: 290px;
+    height: 240px;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 480px) {
+
+    header{
+        justify-content: center;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    #services .service {
+        height: auto;       
+    }
+
+    #infos .container:last-child{
+        order: -1;
+    }
+
+    #quote{
+        display: none;
+    }
+
+    footer .container-text{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .customers .customer {
+        width: calc(100% / 2);
+    }
+
+    #budget{
+        display: none;
+    }
+
+    #characteristics .container:last-of-type{
+        display: none;
+    }
+    
+    footer .container-map{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1025px){
+    
+}
+
