@@ -514,7 +514,7 @@ footer .container-map iframe{
 
 @media screen and (max-width: 768px) {
 
-    footer .container-map, #characteristics .container:last-of-type, #quote, .infos .container:last-child, #budget{
+    footer .container-map, #characteristics .container:last-of-type, #quote, .infos .container:last-child{
         display: none;
     }
 
@@ -565,6 +565,22 @@ footer .container-map iframe{
     .nav-list.active {
         transform: translateX(0);
     }
+
+    #budget {
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    #budget form{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #budget .container-form:first-of-type{
+        border-right: none;
+        padding-right: 0;
+    }
+    
 }
 
 @keyframes navLinkFade {
