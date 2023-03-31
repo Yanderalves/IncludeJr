@@ -33,7 +33,7 @@ a:visited {
 
 /* Header */
 
-header nav{
+header nav {
     display: flex;
     position: fixed;
     width: 100%;
@@ -54,17 +54,17 @@ header nav a:hover{
     list-style: none;
     display: flex;
 }
-  
+
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
 }
-  
+
 .mobile-menu {
     display: none;
     cursor: pointer;
 }
-  
+
 .mobile-menu div {
     width: 32px;
     height: 2px;
@@ -79,7 +79,7 @@ header nav a:hover{
     width: 100%;
     height: 100vh;
     background-color: var(--000);
-} 
+}
 
 #banner {
     display: flex;
@@ -520,7 +520,7 @@ footer .container-map iframe{
 
 
     #services .service {
-        height: auto;       
+        height: auto;
     }
 
     footer .container-text{
@@ -563,21 +563,21 @@ footer .container-map iframe{
     }
 
     .nav-list.active {
-      transform: translateX(0);
-    }    
+        transform: translateX(0);
+    }
 }
 
 @keyframes navLinkFade {
     from {
-      opacity: 0;
-      transform: translateX(50px);
+        opacity: 0;
+        transform: translateX(50px);
     }
     to {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
 }
-  
+
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
 }
