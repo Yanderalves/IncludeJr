@@ -33,7 +33,7 @@ a:visited {
 
 /* Header */
 
-header nav{
+header nav {
     display: flex;
     position: fixed;
     width: 100%;
@@ -49,17 +49,17 @@ header nav{
     list-style: none;
     display: flex;
 }
-  
+
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
 }
-  
+
 .mobile-menu {
     display: none;
     cursor: pointer;
 }
-  
+
 .mobile-menu div {
     width: 32px;
     height: 2px;
@@ -71,11 +71,11 @@ header nav{
 /* Banner */
 
 
-.overlay{
+.overlay {
     width: 100%;
     height: 100vh;
     background-color: var(--000);
-} 
+}
 
 #banner {
     display: flex;
@@ -118,6 +118,8 @@ header nav{
 }
 
 /* Services */
+
+
 #services h3 {
     text-align: center;
     margin: 0 0 20px 0;
@@ -140,9 +142,10 @@ header nav{
     height: 64px;
 }
 
-.icon img{
+.icon img {
     width: 100%;
 }
+
 .service {
     display: flex;
     flex-direction: column;
@@ -182,7 +185,7 @@ header nav{
     transition: transform 0.3s ease;
 }
 
-.service a:hover{
+.service a:hover {
     transform: scale(1.1);
 }
 
@@ -217,13 +220,13 @@ header nav{
 
 /* Infos */
 
-#infos{
+#infos {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.infos{
+.infos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +236,7 @@ header nav{
     padding: 15px;
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,11 +247,11 @@ header nav{
     padding: 20px;
 }
 
-#infos .container{
+#infos .container {
     width: calc(50% - 25px);
 }
 
-.infos .container:first-of-type{
+.infos .container:first-of-type {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -279,7 +282,10 @@ header nav{
 
 .infos .container:last-child .info {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    text-align: center !important;
     background-color: var(--002);
     gap: 25px;
     padding: 50px 20px;
@@ -427,6 +433,10 @@ header nav{
     margin: 25px auto;
 }
 
+#budget h3 {
+    text-align: center;
+}
+
 .container-form {
     display: flex;
     flex-direction: column;
@@ -435,7 +445,7 @@ header nav{
     flex-grow: 1;
 }
 
-#budget .container-form:first-of-type{
+#budget .container-form:first-of-type {
     border-right: 1px solid black;
     padding-right: 50px;
 }
@@ -449,7 +459,8 @@ form {
 }
 
 
-form input,  textarea{
+form input,
+textarea {
     height: 30px;
     padding: 5px 10px;
     color: var(--003);
@@ -459,7 +470,7 @@ form input,  textarea{
     border-radius: 20px;
 }
 
-form textarea{
+form textarea {
     height: 222px !important;
 }
 
@@ -494,13 +505,13 @@ footer .container-text .container-infos {
     gap: 15px;
 }
 
-footer .container-text .social-medias{
+footer .container-text .social-medias {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-footer .container-map iframe{
+footer .container-map iframe {
     width: 290px;
     height: 240px;
 }
@@ -510,16 +521,19 @@ footer .container-map iframe{
 
 @media screen and (max-width: 768px) {
 
-    footer .container-map, #characteristics .container:last-of-type, #quote, .infos .container:last-child, #budget{
+    footer .container-map,
+    #characteristics .container:last-of-type,
+    #quote,
+    .infos .container:last-child {
         display: none;
     }
 
 
     #services .service {
-        height: auto;       
+        height: auto;
     }
 
-    footer .container-text{
+    footer .container-text {
         flex-direction: column;
         text-align: center;
     }
@@ -528,11 +542,11 @@ footer .container-map iframe{
         width: calc(100% / 2);
     }
 
-    #infos .container{
+    #infos .container {
         width: 100%;
     }
 
-    .infos .container .info{
+    .infos .container .info {
         width: 100%;
     }
 
@@ -549,6 +563,7 @@ footer .container-map iframe{
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
+
     .nav-list li {
         margin-left: 0;
         opacity: 0;
@@ -559,21 +574,43 @@ footer .container-map iframe{
     }
 
     .nav-list.active {
-      transform: translateX(0);
-    }    
+        transform: translateX(0);
+    }
+
+    #budget .container-form:first-of-type {
+        justify-content: center;
+        border-right: none;
+        padding-right: 0;
+    }
+
+    #budget {
+        align-items: stretch;
+    }
+
+    form {
+        padding: 15px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .item-form {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @keyframes navLinkFade {
     from {
-      opacity: 0;
-      transform: translateX(50px);
+        opacity: 0;
+        transform: translateX(50px);
     }
+
     to {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
 }
-  
+
 .mobile-menu.active .line1 {
     transform: rotate(-45deg) translate(-8px, 8px);
 }
