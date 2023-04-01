@@ -288,6 +288,7 @@ header nav a:hover{
 .infos .container:last-child .info {
     display: flex;
     flex-direction: column;
+    text-align: center;
     background-color: var(--002);
     gap: 25px;
     padding: 50px 20px;
