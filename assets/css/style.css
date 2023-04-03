@@ -454,23 +454,11 @@ header nav a:hover {
 }
 
 
-
 form {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-}
-
-form button {
-    padding: 5px;
-    background-color: var(--005);
-    color: var(--003);
-    cursor: pointer;
-    border-radius: 20px;
-    border: none;
-    font-size: 1.2em;
-    width: 120px;
 }
 
 .main-container-form {
@@ -500,6 +488,20 @@ form textarea {
     display: flex;
     flex-direction: column;
 }
+
+
+form button {
+    padding: 5px;
+    background-color: var(--005);
+    color: var(--003);
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    font-size: 1.2em;
+    width: 120px;
+}
+
 
 /* Footer */
 footer {
