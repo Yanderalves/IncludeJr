@@ -37,8 +37,10 @@ html {
 
 /* Header */
 
+
 header nav {
     display: flex;
+    backdrop-filter: blur(50px);
     position: fixed;
     width: 100%;
     justify-content: space-between;
@@ -445,13 +447,33 @@ header nav a:hover {
     flex-grow: 1;
 }
 
-#budget .container-form:first-of-type {
-    border-right: 1px solid black;
-    padding-right: 50px;
+.main-container-form span {
+    display: block;
+    background-color: var(--007);
+    width: 2px;
 }
 
 
+
 form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form button {
+    padding: 5px;
+    background-color: var(--005);
+    color: var(--003);
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2em;
+    width: 120px;
+}
+
+.main-container-form {
     max-width: 800px;
     display: flex;
     justify-content: center;
@@ -583,14 +605,13 @@ footer .container-map iframe {
         padding: 10px;
     }
 
-    #budget form {
+    #budget .main-container-form {
         flex-wrap: wrap;
         gap: 10px;
     }
 
-    #budget .container-form:first-of-type {
-        border-right: none;
-        padding-right: 0;
+    #budget .main-container-form span {
+        display: none;
     }
 
 }

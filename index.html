@@ -22,7 +22,7 @@
     <header>
         <nav>
             <img src="assets/images/logo/logo.svg" alt="Logo Include JR">
-                <div class="mobile-menu">
+            <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -114,8 +114,10 @@
                         <h5>Visão</h5>
                         <p>
                             Ser reconhecida como referência em gestão empresarial, oferecendo <em>soluções inovadoras e
-                                personalizadas para cada cliente</em>, com base em princípios éticos e de responsabilidade
-                            social, e contribuir para o <em>desenvolvimento sustentável das empresas e da sociedade</em>.
+                                personalizadas para cada cliente</em>, com base em princípios éticos e de
+                            responsabilidade
+                            social, e contribuir para o <em>desenvolvimento sustentável das empresas e da
+                                sociedade</em>.
                         </p>
                     </div>
                     <div class="info">
@@ -123,7 +125,8 @@
                         <p>
                             Oferecer <em>soluções</em> de gestão empresarial de <em>alta qualidade</em>, ajudando nossos
                             clientes a alcançarem seus <em>objetivos de negócios </em>de <em>forma sustentável</em> e
-                            <em>ética</em>, por meio de uma equipe altamente <em>qualificada</em> e <em>comprometida</em>.
+                            <em>ética</em>, por meio de uma equipe altamente <em>qualificada</em> e
+                            <em>comprometida</em>.
                         </p>
                     </div>
                     <div class="info">
@@ -135,7 +138,8 @@
                                 colaboradores.</li>
                             <li><span>Inovação:</span> buscar sempre soluções criativas e inovadoras para atender as
                                 necessidades de nossos clientes.</li>
-                            <li><span>Excelência:</span> buscar a excelência em tudo o que fazemos, oferecendo serviços de
+                            <li><span>Excelência:</span> buscar a excelência em tudo o que fazemos, oferecendo serviços
+                                de
                                 alta qualidade e valor agregado.</li>
                             <li><span>Responsabilidade social e ambiental:</span> contribuir para o desenvolvimento
                                 sustentável da sociedade e do meio ambiente, por meio de ações e práticas socialmente
@@ -254,46 +258,50 @@
         <section id="budget">
             <h3>Faça um orçamento gratuitamente com a gente!</h3>
             <form action="post">
-                <div class="container-form">
-                    <div class="item-form">
-                        <label for="company">Nome da Empresa</label>
-                        <input type="text" id="company" required>
+                <div class="main-container-form">
+                    <div class="container-form">
+                        <div class="item-form">
+                            <label for="company">Nome da Empresa</label>
+                            <input type="text" id="company" required>
+                        </div>
+                        <div class="item-form">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="item-form">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="item-form">
+                            <label for="uf">UF</label>
+                            <input type="text" id="uf" required>
+                        </div>
+                        <div class="item-form">
+                            <label for="city">Cidade</label>
+                            <input type="text" id="city" required>
+                        </div>
+                        <div class="item-form">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" required>
+                        </div>
                     </div>
-                    <div class="item-form">
-                        <label for="phone">Telefone</label>
-                        <input type="tel" id="phone" required>
-                    </div>
-                    <div class="item-form">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="item-form">
-                        <label for="uf">UF</label>
-                        <input type="text" id="uf" required>
-                    </div>
-                    <div class="item-form">
-                        <label for="city">Cidade</label>
-                        <input type="text" id="city" required>
-                    </div>
-                    <div class="item-form">
-                        <label for="cep">CEP</label>
-                        <input type="text" id="cep" required>
+                    <span></span>
+                    <div class="container-form">
+                        <div class="item-form">
+                            <label for="activity">Ramo(s) da atividade</label>
+                            <input type="text" id="activity" required>
+                        </div>
+                        <div class="item-form">
+                            <label for="activity-details">Detalhe a atividade</label>
+                            <input type="text" id="activity-details" required>
+                        </div>
+                        <div class="item-form">
+                            <label for="desired-services">Serviços desejados</label>
+                            <textarea name="" id="desired-services"></textarea>
+                        </div>
                     </div>
                 </div>
-                <div class="container-form">
-                    <div class="item-form">
-                        <label for="activity">Ramo(s) da atividade</label>
-                        <input type="text" id="activity" required>
-                    </div>
-                    <div class="item-form">
-                        <label for="activity-details">Detalhe a atividade</label>
-                        <input type="text" id="activity-details" required>
-                    </div>
-                    <div class="item-form">
-                        <label for="desired-services">Serviços desejados</label>
-                        <textarea name="" id="desired-services"></textarea>
-                    </div>
-                </div>
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
@@ -325,7 +333,10 @@
             </div>
         </div>
         <div class="container-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359.937377559581!2d-60.66641461162375!3d2.8258829176155627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d930609f3b0a415%3A0x9211314dc7043a71!2sCosmos%20Contabilidade!5e0!3m2!1spt-BR!2sbr!4v1680207664547!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359.937377559581!2d-60.66641461162375!3d2.8258829176155627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8d930609f3b0a415%3A0x9211314dc7043a71!2sCosmos%20Contabilidade!5e0!3m2!1spt-BR!2sbr!4v1680207664547!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
     <!-- Scripts -->
