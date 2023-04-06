@@ -456,7 +456,7 @@ header nav a:hover {
 
 form {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 10px;
 }
@@ -493,6 +493,7 @@ form textarea {
 form button {
     padding: 5px;
     background-color: var(--005);
+    margin: 0 auto;
     color: var(--003);
     cursor: pointer;
     border-radius: 20px;
